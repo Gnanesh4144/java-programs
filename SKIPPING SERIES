@@ -1,0 +1,27 @@
+import java.util.*;
+class skipping_series
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int m,n,i,k;
+		System.out.print("M: ");
+		m=sc.nextInt();
+		System.out.print("N: ");
+		n=sc.nextInt();
+		System.out.print("k: ");
+		k=sc.nextInt();
+		if(m>n || m==n || k<0 || n==0)
+		{
+			System.out.print("Invalid input");
+			return;
+		}
+		for(i=m;i<=n;i+=k+1)
+		{
+			System.out.print(i+" ");
+		}	
+	}
+} 
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
