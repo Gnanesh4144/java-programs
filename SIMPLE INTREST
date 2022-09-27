@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner age=new Scanner(System.in);
+	System.out.print("Enter the age=");  
+    int a= age.nextInt();
+    if(a<=49)
+    {
+    Scanner d=new Scanner(System.in);
+	System.out.print("Enter the p=");  
+    int p= d.nextInt();
+    Scanner e=new Scanner(System.in);
+	System.out.print("Enter the n=");  
+    int n= e.nextInt();
+    int r=15;
+    System.out.println("intrest for your age="+r);
+    int SR;
+    SR=p*n*r%100;
+    System.out.println("SI for person ="+SR);     
+   
+    }
+    else
+    {
+     Scanner b=new Scanner(System.in);
+	System.out.print("Enter the p=");  
+    int v= b.nextInt();
+    Scanner c=new Scanner(System.in);
+	System.out.print("Enter the n=");  
+    int h= c.nextInt();
+    int k=12;
+    System.out.println("intrest for your age="+k);
+    int SI;
+    SI=v*h*k%100;
+    System.out.println("SI of senior citizen ="+SI);  
+    }
+	}
+}
