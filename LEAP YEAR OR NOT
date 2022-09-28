@@ -1,0 +1,55 @@
+import java.util.*;
+public class leap
+{
+	public static void main(String[] args)
+	{
+		int year,i,month,day;
+		Scanner sc=new Scanner(System.in);
+	      System.out.print("Enter date = ");
+		int[] date = new int[3];
+		for(i=0;i<3;i++)
+		{
+			if(!sc.hasNextInt())
+			{
+				System.out.print("Invalid");
+				return;
+			}
+		     date[i]=sc.nextInt();
+		}
+		day=date[0];
+		month=date[1];
+		year=date[2];
+		if(year<0||day<0||month<0)
+      	{
+       		System.out.print("Invalid");
+            	return;
+      	}
+    		if(year==0||day==0||month==0||day>31||month>12)
+    		{
+			System.out.print("Invalid date");
+            	return;    		
+		}
+		if(year%100==0)
+		{
+			if(year%400==0)
+			{
+				System.out.print(year+" is leap year");
+			}
+			else
+			{
+				System.out.print(year+" is not a leap year");
+			}
+		}
+		else
+		{
+			if(year%4==0)
+			{
+				System.out.print(year+" is leap year");
+			}
+			else
+			{
+				System.out.print(year+" is not a leap year");
+        }
+			}
+		}
+	}
