@@ -1,0 +1,76 @@
+import java.util.*;
+class bank
+{  
+	void det()
+	{	
+		System.out.println("------House loan rate of interests-----");
+		System.out.println("1.SBI : 8.4%");
+		System.out.println("2.ICICI : 7.3%");
+		System.out.println("3.AXIS : 9.7%");
+	}
+}
+class calc extends bank
+{
+	void cal()
+	{
+		double r;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Choose bank: ");
+		int n=sc.nextInt();
+		if(n==1||n==2||n==3)
+		{
+			System.out.print("");
+		}
+		else
+		{
+			System.out.print("Invalid");
+			System.exit(0);
+		}
+		System.out.print("Enter loan amount: ");
+		int p=sc.nextInt();
+		System.out.print("Enter years: ");
+		int t=sc.nextInt();
+		double m=t*12;
+		if(n==1)
+		{
+			r=0.084;
+			System.out.println("Bank: SBI");
+			System.out.println("ROI: 8.4%");
+			double i=p*t*r;
+			double to=p+i;
+			double e=(p+i)/m;
+			System.out.println("Total to be paid= "+to);
+			System.out.println("EMI= "+e);
+		}
+		else if(n==2)
+		{
+			r=0.073;
+			System.out.println("Bank: ICICI");
+			System.out.println("ROI: 7.3%");
+			double i=p*t*r;
+			double to=p+i;
+			double e=(p+i)/m;
+			System.out.print("Total to be paid= "+to);
+			System.out.print("EMI= "+e);
+		}
+		else if(n==3)
+		{
+			r=0.097;
+			System.out.println("Bank: AXIS");
+			System.out.println("ROI: 9.7");
+			double i=p*t*r;
+			double to=p+i;
+			double e=(p+i)/m;
+			System.out.print("Total to be paid= "+to);
+			System.out.print("EMI= "+e);
+		}
+	}
+}
+class emi
+{    
+	public static void main(String args[])
+	{
+		calc x=new calc();
+		x.det();
+		x.cal();    
+	}
