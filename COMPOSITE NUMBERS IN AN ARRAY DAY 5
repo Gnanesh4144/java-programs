@@ -30,7 +30,6 @@ class compo
 		        System.out.println("1 is not a prime nor a composite");
 		    }
 		}
-		//System.out.print("Prime: ");
 		for(i=0;i<n;i++)
 		{
 		    c=0;
@@ -44,7 +43,6 @@ class compo
     		if(c==2)
     		{
     	        count++;
-    	        //System.out.print(" "+a[i]);
     	    }
 		}
 		System.out.print("\nComposite: ");
@@ -64,7 +62,6 @@ class compo
     	        System.out.print(" "+a[i]);
     	    }
 		}
-		//System.out.print("\nNo. of Prime= "+count);
 		System.out.print("\nNo. of Composite= "+co);
 	}
 }
