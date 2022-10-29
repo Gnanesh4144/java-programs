@@ -29,6 +29,20 @@ public class DecimalToBinary {
         }
         System.out.println();// new line
     }
+    
+    public static void toOctal(int decimal) {
+        int hexadecimal[] = new int[40];
+        int index = 0;
+        while (decimal > 0) {
+            hexaadecimal[index] = decimal % 64;
+            decimal = decimal / 64;
+            index += 1;
+        }
+        for (int i = index - 1; i >= 0; i--) {
+            System.out.print(hexadecimal[i]);
+        }
+        System.out.println();// new line
+    }
 
     public static void main(String args[]) {
         Scanner obj = new Scanner(System.in);
