@@ -30,11 +30,11 @@ public class DecimalToBinary {
         System.out.println();// new line
     }
     
-    public static void toOctal(int decimal) {
+    public static void tohexadecimal(int decimal) {
         int hexadecimal[] = new int[40];
         int index = 0;
         while (decimal > 0) {
-            hexaadecimal[index] = decimal % 64;
+            hexadecimal[index] = decimal % 64;
             decimal = decimal / 64;
             index += 1;
         }
@@ -53,7 +53,9 @@ public class DecimalToBinary {
             System.out.println("Decimal of " + n + " is: ");
             toBinary(n);
             System.out.println("Octal of " + n + " is: ");
-            toOctal(n);}
+            toOctal(n);
+            System.out.println("hexadecimal of " + n + " is: ");
+            tohexadecimal(n); }
             else{
                 System.out.println("Invalid Input...");
             }
