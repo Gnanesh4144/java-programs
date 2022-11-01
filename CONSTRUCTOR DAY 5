@@ -3,8 +3,7 @@ class cont
 {
    	int num;
    	int x;
-   	cont(int num,int  x)//A constructor in Java is a special method that is used to initialize objects.
-                          //The constructor is called when an object of a class is created.
+   	cont(int num,int  x)
 	   {
       		this.num = num;//Return the current class object
       		this.x = x;
